@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input[type='text']:valid {
+            background-color: yellow;
+        }
+        input[type='text']:invalid{
+            background-color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>check valid</h1>
+    <h2>Hitzza</h2>
+    <form action="css_selector5.html">
+        <input type="text" name="id" id="id" required>
+        <input type="text" name="id" id="id" pattern="[0-9]{6}" value="0-9숫자를 6개 넝어야지만 valid판정" required>
+        <input type="submit">
+    </form>
+</body>
+</html>
