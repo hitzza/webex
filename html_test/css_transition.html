@@ -9,7 +9,9 @@
         border: 2px solid #f2b441;
         border-radius: 10px;
         transition-property: width;
+        /* 트렌지션의 대상이 되는 프로퍼티 지정 */
         transition-duration: 5s;
+        /* 트렌지션이 일어나는 시간설정(현재 5초에 걸쳐 동작하도록 설정)*/
       }
       .box1 {
         background: #f2d541;
@@ -50,6 +52,9 @@
 
       div:hover {
         width: 100%;
+        /* div 태그에 마우스가 올려지면 width가 100%로 되도록 설정,
+        현재 transition 프로퍼티를 사용해서 5초에 걸쳐 width가 100% 되고,
+        박스 별 transition-timing-function을 사용해 이벤트가 일어나는 방식을 각각 다르게 제어 */
       }
     </style>
   </head>
