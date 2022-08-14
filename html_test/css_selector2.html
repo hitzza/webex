@@ -24,16 +24,16 @@
         input:focus{/*가상 클래스 셀렉터 : 요소에 특정 이벤트 발생시를 선택하는 셀렉터*/
             /*:콜론으로 표시*/
             color: brown;
-        }input[type='radio']:indeterminate + span{
+        }input[type='radio']:indeterminate + span{/* 현재 셀렉터 상태가 결정되지 않은 상태 */
             color: red;
         }
-        input[type='radio']:checked + span {
+        input[type='radio']:checked + span {/* 현재 셀렉터가 체크된 상태 */
             color: orange;
         }
-        input[type='checkbox']:enabled + span{
+        input[type='checkbox']:enabled + span{/* 현재 셀렉터가 사용 가능한 상태 */
             color: blue;
         }
-        input[type='checkbox']:disabled + span{
+        input[type='checkbox']:disabled + span{/* 현재 셀렉터가 사용 불가능한 상태 */
             color: green;
         }
     </style>
@@ -68,7 +68,7 @@
     <input type="radio" value="item1" name="item"><span>item1</span>
     <input type="radio" value="item2" name="item"><span>item2</span>
     <input type="checkbox" value="check1" name="check"><span>check1</span>
-    <input type="checkbox" value="check2" name="check" disabled = 'true' ><span>check2</span>
+    <input type="checkbox" value="check2" name="check" disabled = 'true' ><span>check2</span><!-- disabled =true는 해당 요소를 비활성화-->
 
 </body>
 </html>

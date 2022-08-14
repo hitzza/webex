@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        h3::before{
+        h3::before{/* h3 요소 뒤에 지정 */
             content: '잔재미코딩:';
             color: indigo;
         }
-        h3::after{
+        h3::after{/* 해당 요소 앞에 지정 */
             content: 'by Dave Lee';
             color: indigo;
         }
-        p::first-letter{
+        p::first-letter{/* 해당 요소의 첫 글자 */
             font-size: 2em;/*폰트 사이즈를 두배로 키움*/
         }
-        p::first-line{
+        p::first-line{/* 해당 요소의 첫 번째 줄(block요소에만 적용가능) */
             font-size: 1.2em;
         }
-        p::selection{
+        p::selection{/* 해당 요소를 드래그했을 때 */
             background-color: lightyellow;
         }
     </style>

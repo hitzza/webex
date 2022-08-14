@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        p:nth-child(2n-1){/*n은 0부터 시작해서 1씩 증가함!*/
-            color: red;
+        p:nth-child(2n-1){/*n[index번호처럼 0으로 시작]은 0부터 시작해서 마지막 요소까지 1씩 증가함!*/
+            color: red;/* 태그 순서를 기준으로 처음 요소부터 끝까지 해당 조건을 만족하는 요소*/
         }
-        p:nth-last-child(2n-1){
+        p:nth-last-child(2n-1){/* 태그 순서를 기준으로 마지막 요소부터 처음까지 해당 조건을 만족하는 요소 */
             color: blue;
         }
-        span:nth-last-of-type(2n-1){
+        span:nth-last-of-type(2n-1){/* 지정된 태그를 기준으로 마지막 요소부터 처음까지 해당 조건을 만족하는 요소 */
             color:yellow;
         }
-        span:nth-of-type(2n){
+        span:nth-of-type(2n){/* 지정된 태그를 기준으로 처음요소부터 마지막까지 해당 조건을 만족하는 요소 */
             color:green;
         }
-        h2:not(.s){
+        h2:not(.s){/* 해당 태그의 지정된 요소가 아닐 경우 */
             background-color: aqua;
         }
     </style>
