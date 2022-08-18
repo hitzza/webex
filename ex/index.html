@@ -40,11 +40,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- CSS 작명 규칙 (BEM : Block Element Modifier)-->
+    <!-- 대문자 X
+        - : 단어와 단어 사이에는 하이픈 (예: head-container-blue)
+        __ : ~ 의 하위요소 (예: head-container__head-brand)
+        -- : ~ 의 상태를 나타낼 때(예: head-container__head-brand--nolink)
+    -->
     <header>
         <div class="inner">
             <div class="header-container">
-                <div class="header-brand">왼쪽 헤드</div>
-                <div class="header-blog">오른쪽 헤드</div>
+                <div class="header-brand"><a href="http://www.naver.com">왼쪽 헤드</a></div>
+                <div class="header-blog"><a href="http://www.naver.com">오른쪽 헤드</a></div>
             </div>
         </div>
     </header>
