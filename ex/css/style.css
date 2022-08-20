@@ -26,6 +26,7 @@ a:hover{/* 링크 밑줄 제거 */
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding: 0 2rem;/*이너 클래스 객체 살짝 띄우기*/
 }
 header{
     width: 100%;
@@ -58,6 +59,43 @@ header{
     cursor: pointer;/* 마우스 손모양 */
 }
 
+section{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.main{
+    height: 360px;
+    background-image: url('../img/fun-coding-mark.png');
+    z-index: 1;
+    background-size: cover;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 48, 49);
+    opacity: 0.8;/* 투명도 */
+    background-position: center 10%;/*이미지 정렬*/
+    background-repeat: no-repeat;/*이미지 반복 사용 안함*/
+    z-index: 2;
+    padding-top: 60px;
+}
+.title-comtainer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 0.8rem;
+}
+.message{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+}
 @media only screen and (min-width:1200px){
     .inner{/* inner의 width를 */
         max-width: 1200px;/* 1200px을 최대로 고정 */
