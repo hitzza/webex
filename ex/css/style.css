@@ -27,6 +27,7 @@ a:hover{/* 링크 밑줄 제거 */
     height: 100%;
     margin: 0 auto;
     padding: 0 2rem;/*이너 클래스 객체 살짝 띄우기*/
+    overflow: hidden;/* hidden 속성은 padding 속성은 치지 않는다*/
 }
 header{
     width: 100%;
@@ -103,6 +104,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem 0;
 }
 .skill{
     width: 25%;
@@ -113,6 +115,10 @@ section{
     padding: 0.5rem 1rem;
     margin: 0 1rem;
     box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    transition: 0.5s;
+}
+.skill:hover{
+    transform: translate(0, -5px);
 }
 .skill-icon{
     font-size: 2.5rem;
@@ -175,16 +181,23 @@ section{
 }
 .class-list{
     display: flex;
-    list-style: none;
+    list-style: none;/*원래 리스트가 가지고있는 margin과 padding은 사라지지 않음*/
+    padding: 1rem 0;
+    overflow: hidden;
 }
 .class-card{
     width: 240px;
     box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
     border-radius: 8px;
     margin: 0 10px;
+    transition: 0.5s;
+}
+.class-card:hover{
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+    transform: translate(0, -5px);
 }
 .class-img{
-    width: 100%;
+    width: 240px;
     border-radius: 8px 8px 0 0;/* 왼쪽 위 부터 시계방향으로 */
     height: 150px;
 }   
@@ -207,6 +220,28 @@ section{
     background-color: #0d47a1;
     padding: 0.2rem;
 }
+.class-desc{
+    width: 100%;
+    margin-top: 1rem;
+}
+.class-title{
+    font-weight: bold;
+    color: #545e6f;
+    /* text-overflow를 설정하러면 width,white-space: nowrap;, overflow: hidden;가 설정되어 있어야함*/
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;/*텍스트가 화면을 넘어가면 ...표시*/
+    margin-bottom: 0.5rem;
+}
+.class-detail{
+    font-size: 0.9rem;
+    color: #545e6f;
+    line-height: 1.5rem;
+}
+.roadmap-desc{
+    display: visible;
+}
 @media only screen and (min-width:1200px){
     .inner{/* inner의 width를 */
         max-width: 1200px;/* 1200px을 최대로 고정 */
@@ -215,5 +250,8 @@ section{
 @media only screen and (max-width:980px) {/* 화면이 980보다 작아지면*/
     .skill-container{/* skill-container 화면에서 제거*/
         display: none;/*!important를 사용해도 되지만 !important는 가능하면 사용 지양*/
+    }
+    .roadmap-desc{
+        display: none;
     }
 }
