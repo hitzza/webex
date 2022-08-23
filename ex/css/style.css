@@ -116,9 +116,9 @@ section{
 }
 .skill-icon{
     font-size: 2.5rem;
+    margin: 0 10px;
 }
 .skill-title{
-    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -136,8 +136,22 @@ section{
 .python-style{
     color: #2186c4;
 }
+.analysis-style{
+    color: #ff8066;
+}
+.ai-style{
+    color: #f7df1e;
+}
+.vue-style{
+    color: #2e7d32;
+}
 @media only screen and (min-width:1200px){
     .inner{/* inner의 width를 */
         max-width: 1200px;/* 1200px을 최대로 고정 */
+    }
+}
+@media only screen and (max-width:980px) {/* 화면이 980보다 작아지면*/
+    .skill-container{/* skill-container 화면에서 제거*/
+        display: none;/*!important를 사용해도 되지만 !important는 가능하면 사용 지양*/
     }
 }
