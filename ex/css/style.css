@@ -242,6 +242,25 @@ section{
 .roadmap-desc{
     display: visible;
 }
+footer{
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.footer-message{
+    color: #545e6f;
+    font-weight: bold;
+    margin: 0.3rem 0.5rem;
+}
+.footer-contact{
+    color: #545e6f;
+    margin: 0 0.5rem;
+}
+.footer-copyright{
+    color: #545e6f;
+    margin: 1rem 0.5rem;
+}
 @media only screen and (min-width:1200px){
     .inner{/* inner의 width를 */
         max-width: 1200px;/* 1200px을 최대로 고정 */
