@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h3::before{/* h3 요소 뒤에 지정 */
+            content: '잔재미코딩:';
+            color: indigo;
+        }
+        h3::after{/* 해당 요소 앞에 지정 */
+            content: 'by Dave Lee';
+            color: indigo;
+        }
+        p::first-letter{/* 해당 요소의 첫 글자 */
+            font-size: 2em;/*폰트 사이즈를 두배로 키움*/
+        }
+        p::first-line{/* 해당 요소의 첫 번째 줄(block요소에만 적용가능) */
+            font-size: 1.2em;
+        }
+        p::selection{/* 해당 요소를 드래그했을 때 */
+            background-color: lightyellow;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h3>시니어 프론트엔드 엔지니어를 구하기 어려운 이유</h3>
+    <p>
+      프론트엔드 엔지니어라고 별도 분야로 불려진지 얼마 안되었음. 개발자와
+      디자인은 극과 극임에도, 프론트엔드 엔지니어는 디자인을 온전히 구현할 수
+      있을만한 CSS등의 역량과 프로그래밍 역량, 여기에 다양한 프론트엔드
+      프레임워크를 활용할 수 있어야 함. 예전과 달리 굉장히 탁월한 역량을 가지고
+      있어야 함
+    </p>
+</body>
+</html>
