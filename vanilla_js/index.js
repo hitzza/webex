@@ -12,5 +12,10 @@ f = parseFloat(a)
 console.log(i===f)
 */
 
-console.log('test');
+let tyepTest1 = undefined;
+let tyepTest2 = null;
+console.log(typeof tyepTest1,typeof tyepTest2);
+console.log(tyepTest1, tyepTest2)
+console.log(tyepTest1 == tyepTest2);
+console.log(tyepTest1 === tyepTest2);
 //control + option + n  == run javascriptß
