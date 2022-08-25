@@ -36,4 +36,5 @@ const userlog = {
 }
 console.log(userlog);
 console.log(userlog.age,userlog.name);
-console.log(userlog.details.hobby, userlog.details.major,userlog.details.get_details(2));//객체속 다른 객체 불러오기
+console.log(userlog.details.hobby, userlog.details.major,userlog.details.get_details(2));
+//객체속 다른 객체 불러오기
