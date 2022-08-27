@@ -36,3 +36,4 @@ const data3 = [
 
 console.log(data2[0].name);//배열 자체도 object이기 때문에 .name을 써서 호출이 가능
 console.log(data3[0][0]);//2차원 배열 요소 접근
+console.log(data3.length);

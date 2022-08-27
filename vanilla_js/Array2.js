@@ -21,11 +21,11 @@ console.log(arr12);
 const data1 = [1,2,3,4,5,6];
 const data2 = data1.join('*');//배열의 데이터사이에 구분자를 넣어서 문자열로 반환
 console.log(data2, typeof data2);
-
+*/
 const data = [1,2,3,4,5,6];
 //console.log(data.reverse());//배열을 역순으로 재배치
 console.log(data.slice(1,2));//배열의 일부분을 반환 slice(인덱스 번호부터, 해당 인덱스 -1까지),파이썬과 비슷
-*/
+
 
 
 /*
