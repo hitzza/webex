@@ -12,13 +12,14 @@ body{
     color: blue;
 }
 .iconheader{
+    width: 100%;
     font-size: larger;
     justify-content: space-between;
     display: flex;
 }
 .create_button{
     border: 1px solid #fff;
-    border-radius: 30% 30%;
+    border-radius: 2rem;
     color: #fff;
     background-color: black;
     padding: 1rem;
@@ -76,27 +77,39 @@ body{
     margin: 2rem;
 }
 .main_content_container{
-padding: 10%;
+    padding: 10%;
+    width: 100%;
 }
 .main_content_center{
     font-weight: bold;
     font-size: 6rem;
     text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    
 }
 .main_content_footer{
     text-align: center;
+    margin: 2rem;
+    color: gray;
+    white-space: nowrap;
 }
 .main_content_button{
     margin: 10%;
     text-align: center;
+    align-items: center;
+    
 }
 .macbutton{
     background-color:blue;
+    border: 2px solid blue;
     color: #fff;
     border-color: blue;
-    border-radius: 30%;
+    border-radius: 2rem;
     font-size: large;
     padding: 1em;
+    width: 50%;
+    margin: 0 auto;
 }
 .macbutton:hover{
     background-color: black;
