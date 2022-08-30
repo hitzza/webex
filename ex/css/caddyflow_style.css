@@ -143,7 +143,7 @@ section{
 .grey_text{
     color: gray;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 4rem;
     font-size: larger;
 }
 .black_text{
@@ -161,11 +161,36 @@ section{
     letter-spacing: 2rem;
     padding-top: 2rem;
 }
+.roadmap_contaier{
+    width: 100%;
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-between;
+    padding: 5%;
+}
+.roadmap_card{
+    padding:2%;
+}
+.roadmap_icon{
+    font-size: 2rem;
+}
+.roadmap_title{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+.roadmap_detail{
+    color: grey;
+}
 @media only screen and (max-width : 1024px) {
     .header_nav{
         display: none;
     }
     .menu_button{
         display: inline;
+    }
+    .roadmap_contaier{
+        display: block;
     }
 }
