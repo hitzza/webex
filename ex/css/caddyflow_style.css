@@ -31,6 +31,7 @@ section{
 }
 .create_button:hover{
     border: 2px solid #fff;
+    cursor: pointer;
     
 }
 .menu_button{
@@ -52,6 +53,9 @@ section{
     font-weight: bold;
     font-size: larger;
 }
+.main_icon:hover{
+cursor: pointer;
+}
 .menu_container{
     display: flex;
     align-items: center;
@@ -63,6 +67,10 @@ section{
 .product_nav:hover{
     color: #fff;
     margin: 2rem;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.2s;
+
 }
 .pricing_nav{
     color:gray;
@@ -71,6 +79,9 @@ section{
 .pricing_nav:hover{
     color:#fff;
     margin: 2rem;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.2s;
 }
 .patchrelease_nav{
     color:gray;
@@ -79,6 +90,9 @@ section{
 .patchrelease_nav:hover{
     color:#fff;
     margin: 2rem;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.2s;
 }
 .main_content_container{
     padding: 10%;
@@ -118,6 +132,7 @@ section{
 .macbutton:hover{
     background-color: black;
     border-color: #fff;
+    cursor: pointer;
 }
 .main_img_container{
     width: 100%;
