@@ -198,6 +198,58 @@ cursor: pointer;
 .roadmap_detail{
     color: grey;
 }
+.sub_item_container_top{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 3rem;
+}
+.sub_item_container_bottom{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.sub_img1{
+    width: 100%;
+    height:100vh;
+    background-image: url('../img/caddyflow_subimg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sub_img2{
+    width: 100%;
+    height:100vh;
+    background-image: url('../img/caddyflow_subimg2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sub_content_title{
+    font-size: 5rem;
+    text-align: left;
+    font-weight: bold;
+    margin: 0 10%;
+}
+.sub_content_detail{
+    text-align: left;
+    margin: 5% 10%;
+    color: grey;
+}
+.sub_content_button{
+    width: 260px;
+    margin: 0 10%;
+    padding: 1rem;
+    text-align: center;
+    color: grey;
+    border: 2px solid grey;
+    border-radius: 2rem;
+    font-size: larger;
+
+}
+.sub_content_button:hover{
+    border-color: #fff;
+    color: #fff;
+    cursor: pointer;
+}
 @media only screen and (max-width : 1024px) {
     .header_nav{
         display: none;
@@ -206,6 +258,12 @@ cursor: pointer;
         display: inline;
     }
     .roadmap_contaier{
+        display: block;
+    }
+    .sub_item_container_top{
+        display: block;
+    }
+    .sub_item_container_bottom{
         display: block;
     }
 }
