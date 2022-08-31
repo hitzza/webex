@@ -104,6 +104,7 @@ cursor: pointer;
     text-align: center;
     width: 100%;
     white-space: nowrap;
+    margin: 2rem;
     
 }
 .main_content_footer{
@@ -113,7 +114,7 @@ cursor: pointer;
     white-space: nowrap;
 }
 .main_content_button{
-    margin: 10%;
+    margin: 2rem;
     text-align: center;
     align-items: center;
     
@@ -126,7 +127,7 @@ cursor: pointer;
     border-radius: 2rem;
     font-size: large;
     padding: 1em;
-    width: 50%;
+    width: 260px;
     margin: 0 auto;
 }
 .macbutton:hover{
@@ -208,6 +209,7 @@ cursor: pointer;
     display: flex;
     width: 100%;
     position: relative;
+    margin: 3rem;
 }
 .sub_img1{
     width: 100%;
@@ -249,6 +251,47 @@ cursor: pointer;
     border-color: #fff;
     color: #fff;
     cursor: pointer;
+}
+.joinbox_container{
+    width: 100%;
+    padding: 5%;
+    background: linear-gradient(black 50%, #fff 50%);
+}
+.joinbox{
+    background-color: skyblue;
+    border: skyblue solid 1px;
+    border-radius: 2rem;
+    padding: 4rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.macbutton2{
+    background-color:white;
+    border: 2px solid white;
+    color: black;
+    border-color: white;
+    border-radius: 2rem;
+    font-size: large;
+    padding: 1em;
+    width: 260px;
+    margin: 0 auto;
+}
+.macbutton2:hover{
+    border-color: black;
+    cursor: pointer;
+}
+.main_content_center2{
+    font-weight: bold;
+    font-size: 300%;
+    text-align: center;
+    width: 100%;
+    
+}
+.main_content_footer2{
+    text-align: center;
+    margin: 2rem;
+    color: gray;
 }
 @media only screen and (max-width : 1024px) {
     .header_nav{
