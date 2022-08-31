@@ -4,13 +4,15 @@
 
 body{
     margin: 0 auto;/* 모든 요소 가운데 정렬 */
-    color: #fff;
-    background-color: black;
+    color: black;
+    background-color: white;
     font-family: "Spoqa Han Sans Neo", "Sans-serif";/* 다운받은 웹 폰트 */   
 }
 section{
     width: 100%;
     position: relative;
+    background-color: black;
+    color: #fff;
 }
 .circle_style{
     color: blue;
@@ -20,6 +22,8 @@ section{
     font-size: larger;
     justify-content: space-between;
     display: flex;
+    background-color: black;
+    color: #fff;
 }
 .create_button{
     border: 1px solid #fff;
@@ -52,6 +56,7 @@ section{
     margin: 2rem;
     font-weight: bold;
     font-size: larger;
+    filter: blur(0.5px);
 }
 .main_icon:hover{
 cursor: pointer;
@@ -97,6 +102,8 @@ cursor: pointer;
 .main_content_container{
     padding: 10%;
     width: 100%;
+    background-color: black;
+    color: #fff;
 }
 .main_content_center{
     font-weight: bold;
@@ -204,6 +211,8 @@ cursor: pointer;
     width: 100%;
     position: relative;
     margin: 3rem;
+    padding-top: 5rem;
+    
 }
 .sub_item_container_bottom{
     display: flex;
@@ -293,6 +302,62 @@ cursor: pointer;
     margin: 2rem;
     color: gray;
 }
+footer{
+    width: 100%;
+    border-top: gray solid 1px;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.footer-copyright_container{
+    display: flex;
+    justify-content: space-between;
+}
+.fotter_left{
+    width: 30%;
+}
+.footer_icon{
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    filter: blur(0.5px);
+}
+.footer_icon_content{
+    margin: 2rem;
+    font-size: medium;
+    color: gray;
+    font-weight: bold;
+}
+.footer_right{
+    width: 70%;
+    margin: 0 1rem;
+}
+.footer_menu{
+    text-align: center;
+}
+.footer_menu_container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_menu_title{
+    margin: 2rem;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+}
+.footer_menu_content{
+    margin: 2rem;
+    font-size:medium;
+    color: gray;
+    font-weight: bold;
+}
+.footer_menu_content:hover{
+    color: black;
+    cursor: pointer;
+}
 @media only screen and (max-width : 1024px) {
     .header_nav{
         display: none;
@@ -308,5 +373,28 @@ cursor: pointer;
     }
     .sub_item_container_bottom{
         display: block;
+    }
+    .footer_container{
+        display: block;
+    }
+    .footer-copyright_container{
+        display: block;
+    }
+    .footer_menu_container{
+        display: block;
+    }
+    .footer_menu{
+        display: block;
+    }
+    footer{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .fotter_left{
+        width: 100%;
+    }
+    .footer_right{
+        width: 100%;
+        margin: 0;
     }
 }
