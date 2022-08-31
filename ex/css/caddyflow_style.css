@@ -314,6 +314,10 @@ footer{
 .footer-copyright_container{
     display: flex;
     justify-content: space-between;
+    margin: 5rem 2rem;
+    font-size:medium;
+    color: gray;
+    font-weight: bold;
 }
 .fotter_left{
     width: 30%;
@@ -354,7 +358,12 @@ footer{
     color: gray;
     font-weight: bold;
 }
+
 .footer_menu_content:hover{
+    color: black;
+    cursor: pointer;
+}
+.footer-copyright_item:hover{
     color: black;
     cursor: pointer;
 }
