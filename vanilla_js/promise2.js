@@ -17,7 +17,7 @@ const runCode = new Promise(
 //then을 사용해서 결과값 출력(인자를 resolve,reject 2개를 받아야함)
 //argument도 사용 가능
 runCode.then((item)=>{
-    console.log('success',item)
+    console.log('success',item);
 }, (err)=>{
     console.log(err);
 }).then(()=>{
