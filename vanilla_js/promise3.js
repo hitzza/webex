@@ -63,8 +63,15 @@ runCode.then((item)=> {
     return 2;//return값이 다음 then의 인자로 넘겨짐!
 })
 .then((item) => {
-    console.log('success', item);
+    console.log('success2', item);
+})
+.then((item) => {
+    throw Error('error');
+    console.log('success3', item);
 })
 .finally(() => {//finally는 Promise가 resolve가 되는 reject가 되든 마지막에 해당 함수를 실행함
-    console.log('finally');
+    console.log('finally');//에러 상황에는 먼저 코드가 종료가 되기 때문에
+})
+.catch((err) =>{
+    console.log('error.');//finally가 먼저 실행된 후 catch가 실행됨.
 });
