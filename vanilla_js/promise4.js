@@ -31,3 +31,5 @@ Promise.race([promise1,promise2,promise3]).then(
     (data)=>{
         console.log('race',data);
     });
+
+//then으로 출력되지 않더라고 Promise속의 객체들은 실행이 됨
