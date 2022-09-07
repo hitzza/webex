@@ -183,7 +183,7 @@ section{
     display: flex;
     list-style: none;/*원래 리스트가 가지고있는 margin과 padding은 사라지지 않음*/
     padding: 1rem 0;
-    overflow: hidden;
+    overflow: none;
 }
 .class-card{
     width: 240px;
@@ -297,6 +297,14 @@ footer{
     opacity: 1;
     visibility: visible;
     background-color: rgb(47, 48, 49);
+}
+.slide-prev-hover:hover{
+    transition: transform 0.5s;
+    transform: translateX(-2px);
+}
+.slide-next-hover:hover{
+    transition: transform 0.5s;
+    transform: translateX(2px);
 }
 @media only screen and (min-width:1200px){
     .inner{/* inner의 width를 */
