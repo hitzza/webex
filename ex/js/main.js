@@ -34,16 +34,12 @@ function transformPrev(event){//even에 어느 객체에서 어떤 이벤트를 
 
     if(classList.clientWidth < (liList.length *260 + Number(activeLi))){//ul 전체 길이가 카드 값 보다 작으면(슬라이드가 넘쳐 있다면)
         activeLi = Number(activeLi)- 260;//li요소를 왼쪽으로 260만큼 이동
-
-        if(classList.clientWidth > (liList.length *260 + Number(activeLi))){//ul 전체 길이가 카드 값 보다 크면(슬라이드가 끝까지 넘어 갔다면)
-            
-            slideNext.style.color = '#cfd8dc';//오른쪽 버튼 비활성화
-            slideNext.classList.remove('slide-prev-hover');
-        }
-
         slideNext.style.color = '#2f3059';//오른쪽 버튼 활성화
         slideNext.classList.add('slide-next-hover');
-
+    }
+    if(classList.clientWidth > (liList.length *260 + Number(activeLi))){//ul 전체 길이가 카드 값 보다 크면(슬라이드가 끝까지 넘어 갔다면)
+        slidePrev.style.color = '#cfd8dc';//왼쪽 버튼 비활성화
+        slidePrev.classList.remove('slide-prev-hover');
     }
     classList.style.transition = 'transform 1s';
     classList.style.transform = 'translateX(' + String(activeLi) + 'px)';
