@@ -220,13 +220,18 @@ section{
     background-color: #0d47a1;
     padding: 0.2rem;
 }
-.class-desc{
+.calss-desc{
     width: 100%;
     margin-top: 1rem;
+    color: #545e6f;
+}
+.calss-desc:hover{
+    color: #2186c4;
+    cursor: pointer;
 }
 .class-title{
     font-weight: bold;
-    color: #545e6f;
+    color: inherit;/*부모 클래스의 값 상속*/
     /* text-overflow를 설정하러면 width,white-space: nowrap;, overflow: hidden;가 설정되어 있어야함*/
     width: 100%;
     white-space: nowrap;
@@ -236,7 +241,7 @@ section{
 }
 .class-detail{
     font-size: 0.9rem;
-    color: #545e6f;
+    color: inherit;
     line-height: 1.5rem;
 }
 .roadmap-desc{
@@ -305,6 +310,12 @@ footer{
 .slide-next-hover:hover{
     transition: transform 0.5s;
     transform: translateX(2px);
+}
+ul li img:hover{
+    cursor: grab;
+}
+ul li img:active{/*마우스 키다운 시*/
+    cursor: grabbing;
 }
 @media only screen and (min-width:1200px){
     .inner{/* inner의 width를 */
