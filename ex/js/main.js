@@ -121,16 +121,16 @@ function processTouchEnd(event){
     event.preventDefault();
 
     if(mouseStart === true){//원래 동작시키려던 카드 내에서 일어난 이벤트인지 확인
-        currentImg.removeEventListenr('mousemove', processTouchMove);
-        currentImg.removeEventListenr('mouseup', processTouchEnd);
+        currentImg.removeEventListener('mousemove', processTouchMove);
+        currentImg.removeEventListener('mouseup', processTouchEnd);
 
-        currentImg.removeEventListenr('touchmove', processTouchMove);
-        currentImg.removeEventListenr('touchend', processTouchEnd);
+        currentImg.removeEventListener('touchmove', processTouchMove);
+        currentImg.removeEventListener('touchend', processTouchEnd);
         
         //맨 처음 카드가 맨 앞에 배치되도록 초기 상태로 이동
         currentClassList.style.transition = 'transform 1s ease';
         currentClassList.style.transform = 'translateX(0px)';
-        currentClassList.style.setAttribute('data-position', 0);
+        currentClassList.setAttribute('data-position', 0);
 
     }
 }
