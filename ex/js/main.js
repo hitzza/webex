@@ -41,7 +41,7 @@ function transformNext(event){//event에 어느 객체에서 어떤 이벤트를
         if(Number(activeLi) === 0){
             slideNext.style.color = '#cfd8dc';//오른쪽 버튼 비활성화
             slideNext.classList.remove('slide-next-hover');
-            slideNext.removeEventListenr('click',transformNext);//버튼 이벤트 비활성화
+            slideNext.removeEventListener('click',transformNext);//버튼 이벤트 비활성화
             console.log('inner'+activeLi);
         }
     }
@@ -67,7 +67,7 @@ function transformPrev(event){//even에 어느 객체에서 어떤 이벤트를 
     if(classList.clientWidth > (liList.length *260 + Number(activeLi))){//ul 전체 길이가 카드 값 보다 크면(슬라이드가 끝까지 넘어 갔다면)
         slidePrev.style.color = '#cfd8dc';//왼쪽 버튼 비활성화
         slidePrev.classList.remove('slide-prev-hover');
-        slidePrev.removeEventListenr('click',transformPrev);//버튼 이벤트 비활성화
+        slidePrev.removeEventListener('click',transformPrev);//버튼 이벤트 비활성화
     }
     classList.style.transition = 'transform 1s';
     classList.style.transform = 'translateX(' + String(activeLi) + 'px)';
@@ -132,6 +132,19 @@ function processTouchEnd(event){
         currentClassList.style.transform = 'translateX(0px)';
         currentClassList.setAttribute('data-position', 0);
 
+        //버튼도 초기상태로 변경
+        let eachSlidePrev = currentClassList.previousElementSibling.children[1].children[0];
+        let eachSlideNext = currentClassList.previousElementSibling.children[1].children[1];
+        let eachClassList = currentClassList.getElementsByTagName('li');
+
+        eachSlidePrev.style.color = '#2f3059';
+        eachSlidePrev.classList.add('slide-prev-hover');
+        eachSlidePrev.addEventListener('click', transformNext);
+
+        eachSlideNext.style.color = '#cfd8dc';
+        eachSlideNext.classList.remove('slide-next-hover');
+        eachSlideNext.removeEventListener('click', transformNext);
+        mouseStart = false;
     }
 }
 
@@ -145,7 +158,6 @@ function processTouchMove(event){
     //바로 마우스 위치에 따라, 카드를 이동함
     currentClassList.style.transition = 'transform 0s linear';
     currentClassList.style.transform = 'translateX(' + String(nowActiveLi) + 'px)';
-
 
 }
  
