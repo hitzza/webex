@@ -36,13 +36,13 @@ function transformNext(event){//event에 어느 객체에서 어떤 이벤트를
         slidePrev.style.color = '#2f3059';//왼쪽 버튼 활성화
         slidePrev.classList.add('slide-prev-hover');
         slidePrev.addEventListener('click',transformPrev);
-        console.log(activeLi);
+        
 
         if(Number(activeLi) === 0){
             slideNext.style.color = '#cfd8dc';//오른쪽 버튼 비활성화
             slideNext.classList.remove('slide-next-hover');
             slideNext.removeEventListener('click',transformNext);//버튼 이벤트 비활성화
-            console.log('inner'+activeLi);
+            
         }
     }
 

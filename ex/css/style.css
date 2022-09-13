@@ -330,3 +330,25 @@ ul li img:active{/*마우스 키다운 시*/
         display: none;
     }
 }
+@media only screen and (max-width :768px) {
+    .class-skill{
+        display: none;
+    }
+    .class-container{
+        padding: 0.5rem;
+    }    
+    .calss-desc{
+        margin-top: 0rem;
+    }
+}
+@media only screen and (max-width :480px) {
+    .class-skill{
+        display: none;
+    }
+    .class-container{
+        padding: 0.5rem;
+    }    
+    .calss-desc{
+        margin-top: 0.3rem;
+    }
+}
