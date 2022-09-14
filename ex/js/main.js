@@ -28,7 +28,6 @@ function transformNext(event){//event에 어느 객체에서 어떤 이벤트를
 
     const classList = slideNext.parentElement.parentElement.nextElementSibling;
     let activeLi = classList.getAttribute('data-position');
-    const liList = classList.getElementsByTagName('li');
 
     if(Number(activeLi) < 0){//카드가 하나라도 움직였다면
         activeLi = Number(activeLi) + 260 ;
@@ -135,7 +134,6 @@ function processTouchEnd(event){
         //버튼도 초기상태로 변경
         let eachSlidePrev = currentClassList.previousElementSibling.children[1].children[0];
         let eachSlideNext = currentClassList.previousElementSibling.children[1].children[1];
-        let eachClassList = currentClassList.getElementsByTagName('li');
 
         eachSlidePrev.style.color = '#2f3059';
         eachSlidePrev.classList.add('slide-prev-hover');
